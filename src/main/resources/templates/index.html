@@ -8,5 +8,22 @@
 </head>
 <body>
     <h1>It's alive</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <td>Name</td>
+                <td>Price</td>
+            </tr>
+        </thead>
+        <tbody>
+        <!-- comment -->
+            <tr th:each="product : ${all}">
+                <td th:text="${product.name}"></td>
+                <td th:text="${product.price}"></td>
+            </tr>
+        </tbody>
+    </table>
+
 </body>
 </html>
